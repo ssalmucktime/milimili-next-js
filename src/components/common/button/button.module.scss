@@ -1,0 +1,27 @@
+@import '../../../asset/theme.scss';
+
+
+.button{
+    display: flex;
+    height: 3rem;
+    min-width: 5.25rem;
+    max-width: 30rem;
+    padding: 0rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+    background-color: $color-light-gray;
+
+    overflow: hidden;
+        color: $color-dark-brown;
+        text-align: center;
+        font-feature-settings: 'dlig' on;
+        text-overflow: ellipsis;
+        font-family: Manrope;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+        /* 150% */
+}
