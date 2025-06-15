@@ -1,5 +1,18 @@
 
 
+@use '../asset/theme.scss' as theme;
+
+*{
+  box-sizing: border-box;
+}
+:root {
+  --color-dark-brown: #{theme.$color-dark-brown};
+  --color-white: #{theme.$color-white};
+  --color-pink-100: #{theme.$color-pink-100};
+  --color-pink-200: #{theme.$color-pink-200};
+  --color-pink-300: #{theme.$color-pink-300};
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,6 +36,7 @@ time, mark, audio, video,input,button {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  color: #222222;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -31,6 +45,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  height: 100vh;
 }
 ol, ul {
   list-style: none;
@@ -46,5 +61,8 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+button{
+  cursor: pointer;
 }
 

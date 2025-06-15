@@ -2,26 +2,27 @@
 
 
 .button{
+    flex: 1;
     display: flex;
-    height: 3rem;
-    min-width: 5.25rem;
-    max-width: 30rem;
-    padding: 0rem 1.25rem;
+    padding: 0.75rem 1.25rem;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    flex: 1 0 0;
-    background-color: $color-light-gray;
-
+    background-color: $color-pink-100;
+    border-radius: 1.5rem;
     overflow: hidden;
-        color: $color-dark-brown;
-        text-align: center;
-        font-feature-settings: 'dlig' on;
-        text-overflow: ellipsis;
-        font-family: Manrope;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.5rem;
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    text-overflow: ellipsis;
+    font-family: Manrope;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* 자연스러운 전환 효과 추가 */
         /* 150% */
+    &:hover{
+        background-color: $color-pink-200;
+        color: $color-pink-100;
+    }
 }

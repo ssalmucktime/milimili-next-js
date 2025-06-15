@@ -1,11 +1,27 @@
 .span{
-    color: #1C0D0D;
     text-align: center;
-    font-feature-settings: 'dlig' on;
     text-overflow: ellipsis;
     font-family: Manrope;
-    font-size: 1rem;
     font-style: normal;
-    font-weight: 700;
     line-height: 1.5rem;
+}
+
+.color-dark-brown {
+    color: var(--color-dark-brown);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-pink-100 {
+    color: var(--color-pink-100);
+}
+
+.color-pink-200 {
+    color: var(--color-pink-200);
+}
+
+.color-pink-300 {
+    color: var(--color-pink-300);
 }
