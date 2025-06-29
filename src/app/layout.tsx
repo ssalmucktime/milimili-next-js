@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
+import { ToastContainer } from "react-toastify";
+import SnackBarContainer from "@/container/SnackBarContainer";
+import InterceptorContainer from "@/container/InterceptorContainer";
+import OverlayContainer from "@/container/OverlayContainer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +31,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <InterceptorContainer>
+          <SnackBarContainer>
+            <OverlayContainer>{children}</OverlayContainer>
+          </SnackBarContainer>
+          <ToastContainer />
+        </InterceptorContainer>
       </body>
     </html>
   );

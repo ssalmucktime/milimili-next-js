@@ -1,27 +1,8 @@
-.span{
-    text-align: center;
-    text-overflow: ellipsis;
-    font-family: Manrope;
-    font-style: normal;
-    line-height: 1.5rem;
-}
-
-.color-dark-brown {
-    color: var(--color-dark-brown);
-}
-
-.color-white {
-    color: var(--color-white);
-}
-
-.color-pink-100 {
-    color: var(--color-pink-100);
-}
-
-.color-pink-200 {
-    color: var(--color-pink-200);
-}
-
-.color-pink-300 {
-    color: var(--color-pink-300);
+.span {
+  text-align: center;
+  text-overflow: ellipsis;
+  font-family: Manrope;
+  font-style: normal;
+  line-height: 1.5rem;
+  @apply text-sm;
 }

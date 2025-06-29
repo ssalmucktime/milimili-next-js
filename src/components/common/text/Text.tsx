@@ -1,20 +1,19 @@
 import classNames from "classnames";
 import { ReactNode } from "react";
 import styles from "./text.module.scss";
-import { ThemeColor } from "@/asset/theme"; // ThemeColor import 경로 변경
+import { Color } from "@/asset/theme"; // ThemeColor import 경로 변경
+
 export const Span = ({
   children,
   className,
-  color,
+  color = "",
 }: {
-  children: ReactNode;
+  children?: ReactNode;
   className?: classNames.ArgumentArray;
-  color?: ThemeColor; // color props 타입을 ThemeColor로 변경
+  color?: Color; // color props 타입을 ThemeColor로 변경
 }) => {
   return (
-    <span
-      className={classNames(styles.span, className, color && styles[color])}
-    >
+    <span className={classNames(styles.span, className, color)}>
       {children}
     </span>
   );

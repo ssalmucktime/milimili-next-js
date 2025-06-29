@@ -1,7 +1,93 @@
-@forward 'sass:color';
+@forward "sass:color";
 
-$color-dark-brown: #1C0D0D;
-$color-white: #FCF7F7;
-$color-pink-100: #F5E5E5;
-$color-pink-200:#FF8787;
-$color-pink-300: #A14545;
+// 새로운 색상 변수 정의
+$color-beige-100: #f5dba8;
+$color-beige-200: #fcfaf7;
+$color-beige-300: #f2f0e8;
+$color-gold: #96804f;
+$color-dark: #1c170d;
+$color-gray-100: #e5e8eb;
+// 기존 색상 변수
+$color-dark-brown: #1c0d0d;
+$color-white: #fcf7f7;
+$color-pink-100: #f5e5e5;
+$color-pink-200: #ff8787;
+$color-pink-300: #a14545;
+$color-beige-400: #e8c259;
+
+// 색상 변수별 CSS 클래스 정의
+.color-dark-brown {
+  color: $color-dark-brown;
+}
+.color-white {
+  color: $color-white;
+}
+.color-pink-100 {
+  color: $color-pink-100;
+}
+.color-pink-200 {
+  color: $color-pink-200;
+}
+.color-pink-300 {
+  color: $color-pink-300;
+}
+.color-beige-100 {
+  color: $color-beige-100;
+}
+.color-beige-200 {
+  color: $color-beige-200;
+}
+.color-beige-300 {
+  color: $color-beige-300;
+}
+.color-gold {
+  color: $color-gold;
+}
+.color-dark {
+  color: $color-dark;
+}
+.color-gray-100 {
+  color: $color-gray-100;
+}
+
+// 배경색 변수별 CSS 클래스 정의
+.bgcolor-dark-brown {
+  background-color: $color-dark-brown;
+}
+.bgcolor-white {
+  background-color: $color-white;
+}
+.color-beige-400 {
+  color: $color-beige-400;
+}
+.bgcolor-beige-400 {
+  background-color: $color-beige-400;
+}
+
+.bgcolor-pink-100 {
+  background-color: $color-pink-100;
+}
+.bgcolor-pink-200 {
+  background-color: $color-pink-200;
+}
+.bgcolor-pink-300 {
+  background-color: $color-pink-300;
+}
+.bgcolor-beige-100 {
+  background-color: $color-beige-100;
+}
+.bgcolor-beige-200 {
+  background-color: $color-beige-200;
+}
+.bgcolor-beige-300 {
+  background-color: $color-beige-300;
+}
+.bgcolor-gold {
+  background-color: $color-gold;
+}
+.bgcolor-dark {
+  background-color: $color-dark;
+}
+.bgcolor-gray-100 {
+  background-color: $color-gray-100;
+}
